@@ -100,7 +100,7 @@ const Game = () => {
       {!isLoading && questionsData.length > 0 && (
         <>
           <ReactNoti position={POSITION.TOP_RIGHT} />
-          <h3>Current Score: {score}</h3>
+          <h3 className="score">Current Score: {score}</h3>
           {showFinalResults ? (
             <div className="final-results">
               <h1>Final Results</h1>

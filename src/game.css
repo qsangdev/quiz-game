@@ -104,7 +104,7 @@
   cursor: pointer;
 }
 
-.restart:hover{
+.restart:hover {
   cursor: pointer;
   box-shadow: 0 0.4rem 1.4rem 0 rgba(241, 77, 77, 0.5);
   transform: translateY(-0.1rem);
@@ -137,9 +137,13 @@
   cursor: pointer;
 }
 
-.save:hover{
+.save:hover {
   cursor: pointer;
   box-shadow: 0 0.4rem 1.4rem 0 rgba(41, 241, 15, 0.5);
   transform: translateY(-0.1rem);
   transition: transform 150ms;
+}
+
+.score {
+  color: rgb(50, 202, 50);
 }

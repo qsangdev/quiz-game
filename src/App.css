@@ -1,6 +1,19 @@
-:root {
+/* :root {
   background-color: #ecf5ff;
   font-size: 62.5%;
+  height: 100%;
+} */
+
+body,
+html,
+#root {
+  background-color: #ecf5ff;
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
@@ -43,8 +56,7 @@ h3 {
 /* UTILITIES */
 
 .container {
-  width: 100vw;
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,29 +65,14 @@ h3 {
 }
 
 .container > * {
-  width: 100%;
+  width: auto;
 }
 
-.flex-column {
+#home {
   display: flex;
   flex-direction: column;
-}
-
-.flex-center {
   justify-content: center;
   align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.hidden {
-  display: none;
 }
 
 /* BUTTONS */
@@ -187,4 +184,21 @@ tbody tr:hover {
 
 td.rank {
   text-transform: capitalize;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 500px) {
+  h1 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  #highScores {
+    width: auto;
+  }
 }

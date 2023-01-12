@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="container">
-      <div id="home" className="flex-center flex-column">
+      <div id="home">
         <h1>Quick Sport Quiz</h1>
         {playGame ? (
           <>
