@@ -1,0 +1,145 @@
+.game-box {
+  position: relative;
+  width: auto;
+  margin: 20px;
+  text-align: center;
+}
+
+.final-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question {
+  padding: 1.5rem;
+  width: 100%;
+  padding: 1.5rem 2.5rem;
+  background-color: white;
+  color: #56a5eb;
+  margin: 0.5rem;
+  font-size: 1.8rem;
+  border: 0.1rem solid rgb(86, 165, 235, 0.25);
+  background-color: white;
+  border-radius: 10px;
+}
+
+.question:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.correct {
+  background-color: #28a745;
+}
+
+.incorrect {
+  background-color: #dc3545;
+}
+
+/* HUD */
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid #56a5eb;
+  margin-top: 1.5rem;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: #56a5eb;
+  width: 0%;
+}
+
+/* LOADER */
+#loader {
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.6rem solid #56a5eb;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.restart {
+  background-color: red;
+  border: none;
+  width: 200px;
+  margin-top: 20px;
+  color: white;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.restart:hover{
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(241, 77, 77, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.name {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.save {
+  background-color: green;
+  border: none;
+  width: 200px;
+  margin-top: 20px;
+  color: white;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.save:hover{
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(41, 241, 15, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
