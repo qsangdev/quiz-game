@@ -1,14 +1,8 @@
-/* :root {
-  background-color: #ecf5ff;
-  font-size: 62.5%;
-  height: 100%;
-} */
-
 body,
 html,
 #root {
   background-color: #ecf5ff;
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
   width: 100%;
   height: 100%;
   display: flex;
@@ -32,7 +26,7 @@ h4 {
 }
 
 h1 {
-  font-size: 5.4rem;
+  font-size: 3.4rem;
   color: #56a5eb;
   margin-bottom: 5rem;
 }
@@ -43,14 +37,13 @@ h1 > span {
 }
 
 h2 {
-  font-size: 4.2rem;
+  font-size: 2.2rem;
   margin-bottom: 4rem;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 2.8rem;
-  font-weight: 500;
+  font-size: 1.8rem;
 }
 
 /* UTILITIES */
@@ -128,7 +121,7 @@ body {
 }
 
 #highScores {
-  width: 60%;
+  width: 70%;
 }
 
 #highScores > header {
@@ -191,14 +184,31 @@ td.rank {
 @media screen and (max-width: 500px) {
   h1 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 13rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
   }
 
   #highScores {
     width: auto;
+  }
+
+  .question {
+    padding: 0.5rem;
+    font-size: 1.3rem;
   }
 }

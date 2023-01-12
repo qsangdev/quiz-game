@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./game.css";
 import axios from "axios";
-import { ReactNoti, notify, POSITION } from "react-noti";
+import {
+  NotificationManager,
+  NotificationContainer,
+} from "react-notifications";
+import "react-notifications/lib/notifications.css";
 
 const Game = () => {
   const [showFinalResults, setFinalResults] = useState(false);
@@ -57,11 +61,10 @@ const Game = () => {
   const optionClicked = (e) => {
     if (e[0] === true) {
       setScore(score + 10);
-      notify.info("You get 10 points !!", { title: " CORRECT !! " });
+      NotificationManager.success("CORRECT", "You get 10 points", 1000);
     } else {
-      notify.info("Think carefully !!", { title: "WRONG ANSWER !!" });
+      NotificationManager.error("WRONG", "Please choose carefully!", 1000);
     }
-
     if (currentQuestion + 1 < questionsData.length) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
@@ -99,7 +102,7 @@ const Game = () => {
       {isLoading && <h3>Loading ...</h3>}
       {!isLoading && questionsData.length > 0 && (
         <>
-          <ReactNoti position={POSITION.TOP_RIGHT} />
+          <NotificationContainer />
           <h3 className="score">Current Score: {score}</h3>
           {showFinalResults ? (
             <div className="final-results">
