@@ -61,9 +61,9 @@ const Game = () => {
   const optionClicked = (e) => {
     if (e[0] === true) {
       setScore(score + 10);
-      NotificationManager.success("CORRECT", "You get 10 points", 1000);
+      NotificationManager.success("You get 10 points", "CORRECT", 1000);
     } else {
-      NotificationManager.error("WRONG", "Please choose carefully!", 1000);
+      NotificationManager.error("Please choose carefully!", "WRONG", 1000);
     }
     if (currentQuestion + 1 < questionsData.length) {
       setCurrentQuestion(currentQuestion + 1);
